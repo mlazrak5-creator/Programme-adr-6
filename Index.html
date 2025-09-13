@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrique du Rire 6 - Tournée</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <style>
+
+.background-image {
+    position: absolute;
+    top: 60px;
+    left: +1px;
+    width: 142%; /* Augmenter la largeur pour éviter l'espace vide */
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+        
+        * {
+            margin: 1;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+.poster {
+    width: 800px;
+    height: 1450px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+        /* Motifs géométriques en haut */
+        .geometric-border {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            background: repeating-linear-gradient(
+                90deg,
+                #dc2626 0px, #dc2626 30px,
+                #ffffff 30px, #ffffff 35px,
+                #ea580c 35px, #ea580c 65px,
+                #ffffff 65px, #ffffff 70px,
+                #0891b2 70px, #0891b2 100px,
+                #ffffff 100px, #ffffff 105px
+            );
+            z-index: 1;
+        }
+
+        .triangles {
+            position: absolute;
+            top: 50px;
+            width: 100%;
+            height: 30px;
+            background-image: 
+                linear-gradient(45deg, #dc2626 25%, transparent 25%),
+                linear-gradient(-45deg, #dc2626 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #ea580c 75%),
+                linear-gradient(-45deg, transparent 75%, #ea580c 75%);
+            background-size: 40px 40px;
+            background-position: 0 0, 0 20px, 20px -20px, 20px 0px;
+        }
+
+        /* En-tête patronage */
+        .patronage {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1f2937;
+            z-index: 2;
+            padding: 0 20px;
+        }
+
+        /* Logo et titre principal */
+        .main-title {
+            position: absolute;
+            top: 128px;
+            left: 32px;
+            z-index: 3;
+        }
+
+        .edition {
+            background: #ea580c;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 700;
+            display: inline-block;
+            margin-top: 10px;
+            transform: rotate(-15deg);
+	    margin-left: 68px;
+        }
+
+        .tagline {
+            color: #0891b2;
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 15px;
+            letter-spacing: 1px;
+	    margin-left: 41px;
+        }
+
+        /* Section des dates */
+        .dates-section {
+            position: absolute;
+            top: 751px;
+            left: 40px;
+            right: 40px;
+            z-index: 2;
+        }
+
+        .date-card {
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 6px solid #ea580c;
+            transition: transform 0.3s ease;
+        }
+
+        .date-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .date-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .country {
+            font-size: 24px;
+            font-weight: 800;
+            color: #1f2937;
+            text-transform: uppercase;
+        }
+
+        .date {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ea580c;
+            background: rgba(234, 88, 12, 0.1);
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .artists-list {
+            font-size: 17px;
+            color: #4b5563;
+            line-height: 1.4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="poster">
+	<div>
+<img class="background-image" src="https://i.postimg.cc/GmmqfqFG/DSC-0031.jpg">
+    </div>
+        <!-- Bordures géométriques -->
+        <div class="geometric-border"></div>
+        <div class="triangles"></div>
+        
+        <!-- Patronage -->
+        <div class="patronage">
+            SOUS LE HAUT PATRONAGE DE SA MAJESTÉ LE ROI MOHAMMED VI
+        </div>
+        
+        <!-- Titre principal et logo -->
+        <div class="main-title">
+    <img src="https://i.postimg.cc/vZM275Hx/Logo-ADR.png">
+<br><br>
+    <div class="edition">6ème ÉDITION</div>
+    <br><br><br>
+    <div class="tagline">UNIS PAR LE RIRE</div>
+</div>
+
+        <!-- Section des dates -->
+        <div class="dates-section">
+            <div class="date-card">
+                <div class="date-header">
+                    <div class="country">FES</div>
+                    <div class="date">13 Novembre</div>
+                </div>
+                <div class="artists-list">
+                    Oualas • Le Magnific • Marcellin Eucon • Jason Brokerss • Red Supa
+                </div>
+            </div>
+            
+            <div class="date-card">
+                <div class="date-header">
+                    <div class="country">Casa ou Rabat</div>
+                    <div class="date">15 Novembre</div>
+                </div>
+                <div class="artists-list">
+                    Oualas • Le Magnific • Marcellin Eucon • Jason Brokerss • Camille Lellouche • Sofiane Soch • Red Supa
+                </div>
+            </div>
+            
+            <div class="date-card">
+                <div class="date-header">
+                    <div class="country">Niamey</div>
+                    <div class="date">22 Novembre</div>
+                </div>
+                <div class="artists-list">
+                    Oualas • Le Magnific • Marcellin Eucon • Red Supa
+                </div>
+            </div>
+            
+            <div class="date-card">
+                <div class="date-header">
+                    <div class="country">Abidjan</div>
+                    <div class="date">28 Novembre</div>
+                </div>
+                <div class="artists-list">
+                    Oualas • Le Magnific • Marcellin Eucon • Jason Brokerss • Camille Lellouche • Sofiane Soch • Red Supa
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
